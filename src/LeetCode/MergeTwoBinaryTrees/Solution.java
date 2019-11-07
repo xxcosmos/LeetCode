@@ -1,5 +1,7 @@
 package LeetCode.MergeTwoBinaryTrees;
 
+import LeetCode.TreeNode;
+
 /**
  * @author xandcosmos@gmail.com
  * @date 2019-11-07 16:31
@@ -11,7 +13,7 @@ public class Solution {
             return null;
         } else if (t1 != null && t2 == null) {
             return t1;
-        } else if (t1 == null && t2 != null) {
+        } else if (t1 == null) {
             return t2;
         }
         TreeNode currentNode = new TreeNode(t1.val + t2.val);
